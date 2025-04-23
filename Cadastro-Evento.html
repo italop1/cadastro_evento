@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Evento</title>
+</head>
+<body>
+
+    <header>
+        <h1>Evento de Tecnologia 2025</h1>
+    </header>
+
+    <p>Bem-vindo ao nosso evento de tecnologia! Preencha o formulário abaixo para se inscrever.</p>
+
+    <h2>Formulário de Cadastro</h2>
+    
+    <form action="#" method="post">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="data-nascimento">Data de nascimento:</label>
+        <input type="date" id="data-nascimento" name="data-nascimento" required><br><br>
+
+        <fieldset>
+            <legend>Gênero:</legend>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="outro">Outro</label>
+            <input type="radio" id="outro" name="genero" value="outro">
+        </fieldset><br>
+
+        <label for="interesses">Interesses (selecione os que se aplicam):</label><br>
+        <input type="checkbox" id="interesse1" name="interesse" value="tecnologia">
+        <label for="interesse1">Tecnologia</label><br>
+        <input type="checkbox" id="interesse2" name="interesse" value="inovacao">
+        <label for="interesse2">Inovação</label><br>
+        <input type="checkbox" id="interesse3" name="interesse" value="desenvolvimento">
+        <label for="interesse3">Desenvolvimento</label><br><br>
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="rs">Rio Grande do Sul</option>
+            <option value="pr">Paraná</option>
+        </select><br><br>
+
+        <label for="comentarios">Comentários adicionais:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Programação do Evento</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Atividade</th>
+                <th>Palestrante</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00</td>
+                <td>Abertura do evento</td>
+                <td>João Silva</td>
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td>Workshop de Inovação</td>
+                <td>Maria Oliveira</td>
+            </tr>
+            <tr>
+                <td>13:00</td>
+                <td>Almoço e Networking</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
